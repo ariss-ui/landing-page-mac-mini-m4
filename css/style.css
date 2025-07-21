@@ -4,17 +4,17 @@
 }
 
 @font-face {
-  font-family: SFPRODISPLAYBold;
+  font-family: 'SFPRODISPLAYBOLD' ;
   src: url(./assets/fonts/SFPRODISPLAYBOLD.otf) format(opentype);
 }
 
 @font-face {
-  font-family: SFPRODISPLAYMedium;
+  font-family: 'SFPRODISPLAYMMEDIUM' ;
   src: url(./assets/fonts/SFPRODISPLAYMEDIUM.otf) format(opentype);
 }
 
 @font-face {
-  font-family: SFPRODISPLAYRegular;
+  font-family: SFPRODISPLAYREGULAR;
   src: url(./assets/fonts/SFPRODISPLAYREGULAR.otf) format(opentype);
 }
 
