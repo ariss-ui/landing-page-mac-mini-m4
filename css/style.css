@@ -1,29 +1,38 @@
-@font-face {
-  font-family: SFPRODISPLAYBLACK;
-  src: url(./assets/fonts/SFPRODISPLAYBLACK) format(opentype);
+/* 
+
+  Estilos Personalizados
+
+  Aqui vamos a estilar todas las secciones, sus contenidos y el responsivo.
+
+
+*/
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
-@font-face {
-  font-family: 'SFPRODISPLAYBOLD' ;
-  src: url(./assets/fonts/SFPRODISPLAYBOLD.otf) format(opentype);
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-normal);
 }
 
-@font-face {
-  font-family: 'SFPRODISPLAYMMEDIUM' ;
-  src: url(./assets/fonts/SFPRODISPLAYMEDIUM.otf) format(opentype);
+.navbar-menu {
+  display: flex;
+  gap: var(--space-medium);
 }
 
-@font-face {
-  font-family: SFPRODISPLAYREGULAR;
-  src: url(./assets/fonts/SFPRODISPLAYREGULAR.otf) format(opentype);
+.navbar-menu a {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
 }
 
-/* Vinculamos Google FOnts y Material Icons */
-
-body {
-  font-family: 'SFPRODISPLAY' ;
-}
-
-h1 {
-  font-family: 'SFPRODISPLAYBOLD' ;
+.navbar-menu a:hover {
+  color: var(--purple-color);
 }

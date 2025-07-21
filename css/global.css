@@ -7,15 +7,43 @@
 
 */
 
+
+@font-face {
+  font-family: 'SFPRODISPLAYBOLD' ;
+  src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF) format(opentype);
+}
+
+@font-face {
+  font-family: 'SFPRODISPLAYMEDIUM' ;
+  src: url(../assets/fonts/SFPRODISPLAYMEDIUM.OTF) format(opentype);
+}
+
+@font-face {
+  font-family: 'SFPRODISPLAYREGULAR' ;
+  src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF) format(opentype);
+}
+
+@font-face {
+  font-family: 'SFPRODISPLAYREGULAR' ;
+  src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF) format(opentype);
+}
+
+
 :root {
   --light-color: #FFFFFF ;
   --white-color: #FAF7F4 ;
   --dark-color: #000000 ;
   --blue-color: #147D89 ;
   --purple-color: #5B2BE5 ;
+  --light-gray : #C6C6C6;
+  --dark-gray : #464646;
   --degradadoapple-color: linear-gradient(#208FF8, #AB65FB, #F4482E) ;
 
   --font-primary: 'SFPRODISLAY' ;
+
+  --space-small: 16px ;
+  --space-normal:  24px ;
+  --space-medium: 32px ;
 }
 
 body {
@@ -31,4 +59,27 @@ h5,
 h6 {
   font-family: var(--font-primary);
   color: var(--dark-color);
+}
+
+
+/* Buttons */
+
+.button-primary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+  padding: var(--space-small) var(--space-normal); 
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 32px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  color: var(--light-color);
+  background-color: var(--dark-gray);
 }
