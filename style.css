@@ -1,3 +1,29 @@
-body{
-  background-color: cadetblue;
+@font-face {
+  font-family: SFPRODISPLAYBLACK;
+  src: url(./assets/fonts/SFPRODISPLAYBLACK) format(opentype);
+}
+
+@font-face {
+  font-family: SFPRODISPLAYBold;
+  src: url(./assets/fonts/SFPRODISPLAYBOLD.otf) format(opentype);
+}
+
+@font-face {
+  font-family: SFPRODISPLAYMedium;
+  src: url(./assets/fonts/SFPRODISPLAYMEDIUM.otf) format(opentype);
+}
+
+@font-face {
+  font-family: SFPRODISPLAYRegular;
+  src: url(./assets/fonts/SFPRODISPLAYREGULAR.otf) format(opentype);
+}
+
+/* Vinculamos Google FOnts y Material Icons */
+
+body {
+  font-family: 'SFPRODISPLAY' ;
+}
+
+h1 {
+  font-family: 'SFPRODISPLAYBOLD' ;
 }
