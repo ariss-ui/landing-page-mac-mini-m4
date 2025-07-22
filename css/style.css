@@ -7,6 +7,23 @@
 
 */
 
+
+@font-face {
+  font-family: 'SFPRODISPLAYBOLD' ;
+  src: url(/assets/fonts/SFPRODISPLAYBOLD.OTF) format(opentype);
+}
+
+@font-face {
+  font-family: 'SFPRODISPLAYMEDIUM' ;
+  src: url(/assets/fonts/SFPRODISPLAYMEDIUM.OTF) format(opentype);
+}
+
+@font-face {
+  font-family: 'SFPRODISPLAYREGULAR' ;
+  src: url(/assets/fonts/SFPRODISPLAYREGULAR.OTF) format(opentype);
+}
+
+
 /* Header */
 .header {
   position: fixed;
@@ -29,10 +46,66 @@
 }
 
 .navbar-menu a {
-  font-family: var(--font-primary);
+  font-family: 'SFPRODISPLAYMEDIUM';
   text-transform: uppercase;
 }
 
 .navbar-menu a:hover {
   color: var(--purple-color);
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  min-height: 100px;
+  background-color: var(--white-color); /* No tengo imagen de fondo, solo es un color */
+
+/*      No hacer caso 
+background-image: url(../assets);
+background-size: cover;
+background-position: center;
+*/
+display: flex;
+justify-content: center;
+align-items: center;
+
+color: var(--dark-color);
+
+}
+
+.hero-content {
+  /* width: 50%; */
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-small);
+/*   max-width: 80%; */
+text-align: center;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-small);
+  margin-bottom: var(--space-medium);
+  justify-content: center;
+}
+
+/*
+.hero-icons {
+  display: flex;
+  gap: var(--space-small);
+}
+*/
+
+.hero-text {
+  font-family: 'SFPRODISPLAYREGULAR';
+}
+
+.hero-text-horizontal-gradient {
+  font-family: 'SFPRODISPLAYREGULAR';
+  background: linear-gradient(to right, #208FF8, #AB65FB, #F4482E);
+  -webkit-background-clip: text;
+  color: transparent;  
 }
