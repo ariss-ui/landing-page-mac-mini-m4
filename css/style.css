@@ -103,9 +103,63 @@ text-align: center;
   font-family: 'SFPRODISPLAYREGULAR';
 }
 
+.title-text {
+  font-family: 'SFPRODISPLAYBOLD';
+}
+
 .hero-text-horizontal-gradient {
   font-family: 'SFPRODISPLAYREGULAR';
   background: linear-gradient(to right, #208FF8, #AB65FB, #F4482E);
   -webkit-background-clip: text;
   color: transparent;  
+}
+
+/* Perspective */
+
+.perspective {
+  background-color: var(--light-color);
+}
+
+.perspective-header {
+  font-family: 'SFPRODISPLAYREGULAR';
+  margin-bottom: 1rem;
+}
+
+.perspective-content {
+  display: flex;
+  align-items: center;
+}
+
+.perspective-thumbnails {
+  width: 50%;
+}
+
+.thumbnail-item {
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  filter: brightness(0.6);
+  transition: filter .3s ease;
+}
+
+.thumbnail-item:hover {
+  filter: brightness(1);
+}
+
+.thumbnails-list {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: var(--space-medium);
+}
+
+.perspective-showcase {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-medium);
+}
+
+.perspective-info {
+  text-align: center;
 }
