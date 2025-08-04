@@ -163,3 +163,41 @@ text-align: center;
 .perspective-info {
   text-align: center;
 }
+
+/* Media */
+
+.media-header {
+  text-align: center;
+  margin-bottom: var(--space-normal);
+}
+
+.wrapper-title {
+  font-family: 'SFPRODISPLAYREGULAR';
+  font-size: 2rem;
+}
+
+.wrapper-text {
+  font-family: 'SFPRODISPLAYBOLD';
+  font-size: 3rem;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-normal);
+  margin-bottom: var(--space-medium);
+}
+
+.carousel-item {
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+

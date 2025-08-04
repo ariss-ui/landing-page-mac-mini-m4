@@ -40,6 +40,7 @@
   --space-small: 16px ;
   --space-normal:  24px ;
   --space-medium: 32px ;
+  --space-large: 40px ;
 }
 
 body {
@@ -65,6 +66,14 @@ h2 {
 h3 {
   font-size: 1.75rem;
   margin-bottom: 0.8rem;
+}
+
+section {
+  margin-bottom: var(--space-large);
+}
+
+button {
+  cursor: pointer;
 }
 
 
