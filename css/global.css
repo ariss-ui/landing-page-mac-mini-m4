@@ -29,8 +29,8 @@
   --white-color: #FAF7F4 ;
   --dark-color: #000000 ;
   --blue-color: #147D89 ;
-  --buy-blue: #0071E3;
-  --purple-color: #5B2BE5 ;
+  --buy-blue: #0071e3;
+  --purple-color: #5b2be5 ;
   --light-gray : #C6C6C6;
   --dark-gray : #464646;
   --degradadoapple-color: linear-gradient(#208FF8, #AB65FB, #F4482E) ;
@@ -52,6 +52,7 @@
 }
 
 html {
+  font-size: 18px; /* Default */
   scroll-behavior: smooth;
 }
 
@@ -78,6 +79,10 @@ h2 {
 h3 {
   font-size: 1.75rem;
   margin-bottom: 0.8rem;
+}
+
+p {
+  line-height: 1.75rem;
 }
 
 section {

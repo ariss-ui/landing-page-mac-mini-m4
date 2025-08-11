@@ -64,11 +64,11 @@
   min-height: 100px;
   background-color: var(--white-color); /* No tengo imagen de fondo, solo es un color */
 
-/*      No hacer caso 
-background-image: url(../assets);
-background-size: cover;
-background-position: center;
-*/
+  /*      No hacer caso 
+  background-image: url(../assets);
+  background-size: cover;
+  background-position: center;
+  */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -223,4 +223,53 @@ text-align: center;
 
 .carousel-item:hover img {
   filter: brightness(1);
+}
+
+/* Frescura */
+.frescura {
+  background:
+  /* Capas */
+  /* Layer 1 */ linear-gradient(90deg, rgba(0, 113, 227, 0.178) 0%, rgba(90, 43, 229, 0.233) 100%),
+  /* Separa por comas */ /* Layer 2 */ url('../assets/images/about-background.png') center center no-repeat;
+  background-size: cover;
+}
+
+.frescura > div {
+  display: flex;
+  padding: var(--space-large);
+}
+
+.frescura-image,
+.frescura-content {
+  width: 50%;
+}
+
+.frescura-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frescura-image img {
+  width: 100%;
+  max-width: 420px;
+  min-width: 600px;
+}
+
+.frescura-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'SFPRODISPLAYREGULAR';
+  font-size: 1.05rem;
+}
+
+.frescura-content h2,
+.frescura-content p {
+  color: var(--light-color);
+}
+
+.frescura-title {
+  font-family: 'SFPRODISPLAYBOLD';
+  font-size: 3rem;
 }
