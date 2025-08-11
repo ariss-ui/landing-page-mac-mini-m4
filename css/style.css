@@ -38,6 +38,9 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--space-normal);
+
+  background-color: var(--dark-color-transparent);
+  backdrop-filter: blur(6px);
 }
 
 .navbar-menu {
