@@ -166,6 +166,11 @@ text-align: center;
 
 /* Media */
 
+.media {
+  padding: var(--space-medium);
+  background-color: var(--white-color);
+}
+
 .media-header {
   text-align: center;
   margin-bottom: var(--space-normal);
@@ -185,6 +190,7 @@ text-align: center;
   position: relative;
   width: 100%;
   overflow: hidden;
+  background-color: var(--white-color);
 }
 
 .carousel-track {
@@ -199,5 +205,19 @@ text-align: center;
   position: relative;
   width: 50%;
   height: auto;
+
+  cursor: pointer;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.6);
+  transition: filter 0.3s ease;
+}
+
+.carousel-item:hover img {
+  filter: brightness(1);
+}
